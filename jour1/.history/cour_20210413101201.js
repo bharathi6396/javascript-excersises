@@ -1,0 +1,2 @@
+var school;
+school = "konexio";
