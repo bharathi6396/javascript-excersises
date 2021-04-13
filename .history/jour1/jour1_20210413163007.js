@@ -61,9 +61,6 @@ console.log(leftFillNum(nombre2, 4));
 console.log(rightFillNum(nombre3, 4));
 console.log(rightFillNum(nombre4, 5));
 
-//12
-var phrase = "@g3v0@l03d0oil8j0ts31c0sim@0s3l0t8l@S";
-
 
  
 

@@ -48,21 +48,13 @@ console.log(phrase2.includes("bisou"));
 function leftFillNum(num, targetLength) {
     return num.toString().padStart(targetLength, 0);
 }
-var nombre1 = 11;
-var nombre2 = 999;
-
-function rightFillNum(num, targetLength) {
-    return num.toString().padEnd(targetLength, 0);
-}
-var nombre3 = 2.2;
-var nombre4 = 10.9; 
+var nombre1 = 11; // Afficher 0011
+var nombre2 = 999; // Afficher 0999
+var nombre3 = 2.2; // Afficher 2.20
+var nombre4 = 10.9; // Afficher 10.90
 console.log(leftFillNum(nombre1, 4));
 console.log(leftFillNum(nombre2, 4));
-console.log(rightFillNum(nombre3, 4));
-console.log(rightFillNum(nombre4, 5));
 
-//12
-var phrase = "@g3v0@l03d0oil8j0ts31c0sim@0s3l0t8l@S";
 
 
  
