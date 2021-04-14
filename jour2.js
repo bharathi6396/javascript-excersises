@@ -56,11 +56,11 @@ console.log(phrase);
 
 //08
 var limit = 50;
-var score = 64;
+var score = 30;
 if (score >= limit  &&  password.length > 5){
     phrase = "Everything is good";
 }
- else if  (score < limit  ||  password.length > 5){
+ else if  (score >= limit  ||  password.length > 5){
     phrase = "Something is good";
 }
  else  {
@@ -68,10 +68,62 @@ if (score >= limit  &&  password.length > 5){
  } 
  console.log(phrase);
 
+ //*
+ var random = Math.random(integer);
+ if(random == 10){
+     phrase = "Yes I win!";
+ }
+ else{
+     phrase = "So close..."
+ }
+ console.log(phrase);
+
+ //** 
+ var month = "January";
+ switch (month) {
+        case "February": 
+            console.log(" Fall");
+            break;
+        case "March": 
+            console.log("Autumn");
+            break;
+        case "April": 
+            console.log("Summer");
+            break;
+        case "January": 
+            console.log("Winter");
+            break;
+        default: 
+            console.log("That's not a month...");
+    }
+
+    //*** 
+    // partie 1
+
+    var roundedNumber = 3.6;
+    Math.floor(roundedNumber); 
+    Math.ceil(roundedNumber); 
+    if (roundedNumber % 1 >= 0.5) {
+        console.log(Math.ceil(roundedNumber));
+    } else {
+        console.log(Math.floor(roundedNumber));
+    }
+    
+    // partie 2
+    var roundedNumber = "3.6";
+    roundedNumber = roundedNumber.toString(); 
+    if (roundedNumber % 1 >= 0.5) {
+        console.log(Math.ceil(roundedNumber));
+    } else {
+        console.log(Math.floor(roundedNumber));
+    }
+   
+
+
+
+
+
   
 
-// - Combinez les deux conditions précedents (exercices 6 et 7)
-// - Afficher "Everything is good" si les deux conditions sont vraies
-// - Afficher "Something is good" si une des deux conditions est vraie
-// - Afficher "Nothing is good" si aucune des deux conditions n'est vraie
+
 
