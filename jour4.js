@@ -30,10 +30,26 @@ function checkIfEven (num){
     if(num % 2 == 0) {
         console.log("even");
     }
-    
     else {
         console.log("odd");
     }
 }
 checkIfEven (5);
 checkIfEven(6);
+
+//04
+function compare (num1, num2) {
+    if(num1 > num2) {
+        console.log("num1 is bigger");
+    }
+    else {
+        console.log("num2 is bigger");
+    }
+}
+compare(3, 6);
+compare(6, 3);
+
+//05
+function addUp (num){
+
+}
