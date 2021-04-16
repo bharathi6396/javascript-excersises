@@ -26,4 +26,14 @@ let value3 = "isCute";
 console.log(cat2[value3]);
 
 //03
-function checkIfEven (num)
+function checkIfEven (num){
+    if(num % 2 == 0) {
+        console.log("even");
+    }
+    
+    else {
+        console.log("odd");
+    }
+}
+checkIfEven (5);
+checkIfEven(6);
