@@ -51,5 +51,19 @@ compare(6, 3);
 
 //05
 function addUp (num){
+let total = 0;
 
+        for (let i = 1; i <= num; i++) {
+             total += i; 
+        }
+        return total;
 }
+  addUp(12);
+  console.log(addUp(12));
+ 
+
+//06 
+function format (num){
+    
+}
+
