@@ -32,8 +32,9 @@ console.log(numbers);
 // //05
 var total = 0;
 var limit = 10;
-for (var i=0; i < total.length; i++) {
-	console.log(total);
+for (var i=0; i <= limit; i++) {
+	total += i;
+    // console.log("total partiel:", total);
 }
 
 
@@ -58,6 +59,7 @@ for (var i = 0; i < 100; i++){
         console.log("buzz");
         continue;
     }
+    
     if( i % 7 == 0){
         continue;
     }
