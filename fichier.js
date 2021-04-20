@@ -7,29 +7,38 @@ function sortLetters (string) {
   
   //02
   function countEach (string){
-      string = ("x","x","x","o","o");
-      x = 3;
-      o = 3;
-      for (var i = 0; i < string.length; i++){
-        if (string[x == o]) {
-            return (true);
+      // string = ("x","x","x","o","o");
+      letters = string.split ("");
+      x = 0;
+      o = 0;
+      for (var i = 0; i < letters.length; i++){
+        if (letters[i] === "o") {
+          o += 1;
         }
-      else {
+       if ( letters [i] === "x"){
+         x +=1;
+       }
 
-           return (false);}
       }
+      return ( x === o )
+      
   }
       console.log(countEach("xxxoooox"));
       console.log(countEach("xoxxx"));
 
       //03
-
+      
       function checkpal (string){
              var re = /[^A-Za-z0-9]/g;
             var lowRegStr = string.toLowerCase().replace(re, '');
             var reverseStr = lowRegStr.split('').reverse().join(''); 
-            return reverseStr === lowRegStr;
-          }
+            if (reverseStr === lowRegStr) {
+               return ("palindrome!")
+              }
+              else {
+                return ("Nope")
+              }
+      }
           console.log(checkpal("racecar"));
           console.log(checkpal("laptop"));
 
