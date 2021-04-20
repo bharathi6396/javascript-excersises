@@ -46,4 +46,32 @@ function swap (string){
         return newLetters;
     }
     console.log (swap("Hello World"));
-    
+
+    //*
+    function makeItSpongeBob (string) { 
+        var bob = '';
+        for (var i = 0; i < string.length; i++) {
+          if(Math.random() > .5){
+            bob += string.charAt(i).toUpperCase();
+          } else {
+            bob += string.charAt(i).toLowerCase();
+          }
+        }
+        return bob;
+      }
+      console.log(makeItSpongeBob("Javascript is easy"));
+
+    //** 
+    function sortLetters (string) {
+        var text = '';
+        for (var i = 0; i < string.length; i++) {
+          if(Math.random() > .5){
+            text += string.charAt(i).toUpperCase();
+          } else {
+            text += string.charAt(i).toLowerCase();
+          }
+        }
+        return text;
+      }
+      console.log(sortLetters("Konexio"));
+
